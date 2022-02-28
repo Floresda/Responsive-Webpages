@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="english">
+<title> About Myself </title>
+<meta charset="utf-8"/>
+<head>
+	<link rel="stylesheet" type="text/css" href="sheet.css">
+</head>
+<body>
+<div class="tab">
+	<button class="tablinks" onclick="openCity(event, 'Home Page')">Home Page</button>
+	<button class="tablinks" onclick="openCity(event, 'About Page')">About Page</button>
+</div>
+
+<div id="Home Page" class="tabcontent">
+	<h1>Welcome to this cool website!</h1>
+	<h3>Home Page</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie a iaculis at erat pellentesque adipiscing commodo. Bibendum neque egestas congue quisque egestas diam in arcu. Euismod lacinia at quis risus sed vulputate. Ultrices sagittis orci a scelerisque purus. Lectus proin nibh nisl condimentum id. Porttitor eget dolor morbi non. Velit ut tortor pretium viverra suspendisse potenti nullam. Auctor urna nunc id cursus metus aliquam eleifend. Elementum nibh tellus molestie nunc. Interdum consectetur libero id faucibus nisl. Fames ac turpis egestas maecenas. Nisl nisi scelerisque eu ultrices vitae auctor. Vulputate odio ut enim blandit. Accumsan in nisl nisi scelerisque.
+
+	</p><p>Sed euismod nisi porta lorem mollis aliquam ut porttitor. Et pharetra pharetra massa massa. Cursus mattis molestie a iaculis. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Erat nam at lectus urna duis convallis convallis tellus. At volutpat diam ut venenatis tellus in metus vulputate. Volutpat consequat mauris nunc congue nisi. Ligula ullamcorper malesuada proin libero nunc. Rhoncus mattis rhoncus urna neque. Interdum velit euismod in pellentesque. Adipiscing tristique risus nec feugiat in fermentum posuere. Dui vivamus arcu felis bibendum ut. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Morbi non arcu risus quis varius quam quisque.</p>
+	<button onclick="openCity(event,'About Page')">Open About Me</button>
+</div>
+
+<div id="About Page" class="tabcontent">
+	<h3>About Me</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Vitae nunc sed velit dignissim sodales ut. Mauris sit amet massa vitae. Nisl purus in mollis nunc sed id. Cursus sit amet dictum sit amet justo donec. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Volutpat ac tincidunt vitae semper quis lectus. Eget nunc scelerisque viverra mauris in. Habitant morbi tristique senectus et. Neque gravida in fermentum et sollicitudin. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Ac tortor vitae purus faucibus ornare suspendisse sed. Sed id semper risus in hendrerit gravida rutrum. Magnis dis parturient montes nascetur ridiculus mus. Id neque aliquam vestibulum morbi blandit cursus. Iaculis eu non diam phasellus. Auctor eu augue ut lectus arcu.</p>
+	<img src="ball.jpg" alt="ball"><p>Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Diam quis enim lobortis scelerisque fermentum dui. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Euismod nisi porta lorem mollis aliquam ut porttitor. Magna ac placerat vestibulum lectus mauris. Nisi est sit amet facilisis. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Pulvinar mattis nunc sed blandit. Enim tortor at auctor urna nunc id cursus. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Cras fermentum odio eu feugiat pretium nibh ipsum consequat. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Tincidunt vitae semper quis lectus nulla. Ac ut consequat semper viverra nam libero justo laoreet sit. Mauris vitae ultricies leo integer malesuada. Nec sagittis aliquam malesuada bibendum arcu.</p>
+	<img src="football.jfif" alt="football"<p>In fermentum posuere urna nec tincidunt. Mattis molestie a iaculis at erat pellentesque. Morbi tincidunt augue interdum velit euismod in pellentesque. Nunc sed blandit libero volutpat sed cras ornare. Maecenas accumsan lacus vel facilisis volutpat est velit. Quis imperdiet massa tincidunt nunc pulvinar sapien. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Ut tristique et egestas quis ipsum. Diam maecenas ultricies mi eget. Ac turpis egestas sed tempus urna et.</p>
+	<img src="volleyball.jfif" alt="volleyball"<p>Et ultrices neque ornare aenean euismod elementum. Quis imperdiet massa tincidunt nunc. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Turpis egestas sed tempus urna et. Sem viverra aliquet eget sit amet tellus cras. Est placerat in egestas erat imperdiet sed. Magna eget est lorem ipsum dolor. Duis ut diam quam nulla porttitor massa id neque. Non nisi est sit amet facilisis. Donec ac odio tempor orci dapibus. Suspendisse sed nisi lacus sed viverra tellus in hac. Lacus suspendisse faucibus interdum posuere lorem ipsum. Faucibus purus in massa tempor nec. Tortor dignissim convallis aenean et tortor.</p>
+	<img src="basketball.jfif" alt="basketball">
+</div>
+
+<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+</body>
+
+</html>
